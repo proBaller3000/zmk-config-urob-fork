@@ -16,6 +16,7 @@
 
 #include "../zmk-nodefree-config/helper.h"
 #include "symbols.h"
+#include "keypos_42keys.h"
 
 &led_strip {
     chain-length = <27>;
