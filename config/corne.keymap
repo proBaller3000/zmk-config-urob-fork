@@ -37,6 +37,12 @@ ZMK_BEHAVIOR(tkm, hold_tap,
     bindings = <&mo>, <&kp>;
 )
 
+// Alt+Tab swapper, requires PR #1366
+ZMK_BEHAVIOR(swapper, tri_state,
+    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    ignored-key-positions = <LH2>;
+)
+
 // Custom Combos
 #undef COMBO_TERM
 #define COMBO_TERM 50
@@ -67,7 +73,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)       HT(FSLH)      HT(TAB)
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &kp LCTRL    &kp LALT       &tkm 1 SPACE      &tkm 2 RET    &key_repeat   &kp LGUI
+                                                 &swapper      &kp LALT      &tkm 1 SPACE      &tkm 2 RET    &key_repeat   &kp LGUI
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
