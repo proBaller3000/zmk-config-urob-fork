@@ -42,6 +42,12 @@ ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
     ignored-key-positions = <LH2>;
 )
+ZMK_BEHAVIOR(swp, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&mo>, <&>;
+)
 
 // Custom Combos
 #undef COMBO_TERM
@@ -73,7 +79,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)       HT(FSLH)      HT(TAB)
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &swapper      &kp LALT      &tkm 1 SPACE      &tkm 2 RET    &key_repeat   &kp LGUI
+                                                 &swp 3 swapper &kp LALT      &tkm 1 SPACE      &tkm 2 RET    &key_repeat   &kp LGUI
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
