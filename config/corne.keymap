@@ -71,6 +71,7 @@ ZMK_COMBO(num_layer, &to NUM, LM3 RM3, ALL)
 ZMK_COMBO(sys_layer_right, &mo 4, RH1 RH2, ALL)
 ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
+ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
