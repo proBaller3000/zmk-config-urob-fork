@@ -42,11 +42,11 @@ ZMK_BEHAVIOR(tkm, hold_tap,
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <RB5 RH0 ARROWKEYS>;
+    ignored-key-positions = <RB5 ARROWKEYS>;
 )
 ZMK_BEHAVIOR(swapper2, tri_state,
     bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
-    ignored-key-positions = <RB4 RH0 ARROWKEYS>;
+    ignored-key-positions = <RB4 ARROWKEYS>;
 )
 
 // Custom Combos
