@@ -37,6 +37,13 @@ ZMK_BEHAVIOR(mto, hold_tap,
     bindings = <&mo>, <&kp>;
 )
 
+ZMK_BEHAVIOR(tkm, hold_tap,
+    flavor = "hold-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&kp>;
+)
+
 #define ARROWKEYS RM1 RM2 RM3 RT2
 
 // Alt+Tab swapper, requires PR #1366
@@ -71,7 +78,6 @@ ZMK_COMBO(nav_layer, &to NAV, LH0 RH0, ALL)
 ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
 ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 
-ZMK_COMBO(enter, HT(RET), RM1 RM2, ALL)
 ZMK_COMBO(bspace, HT(BSPC), LH0 RT4, ALL)
 ZMK_COMBO(del, HT(DEL), RH0 RT4, ALL)
 ZMK_COMBO(escape, &hrm LA(F4) ESC, LH0 LM3, ALL)
@@ -84,7 +90,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)       HT(FSLH)      &swapper
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &sk LCTRL     &sk LALT      &sk LSHFT         &mto NAV SPACE  &lt NUM TAB   &sk LGUI
+                                                 &sk LCTRL     &sk LALT    &tkm LSHFT SPACE    &mto NAV RET  &lt NUM TAB   &sk LGUI
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
