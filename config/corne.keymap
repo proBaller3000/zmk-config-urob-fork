@@ -81,7 +81,7 @@ ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 ZMK_COMBO(enter, HT(RET), RM1 RM2, ALL)
 ZMK_COMBO(bspace, HT(BSPC), RM3 RM2, ALL)
 ZMK_COMBO(del, HT(DEL), RM3 RM4, ALL)
-ZMK_COMBO(escape, &hrm LA(F4) ESC, LH0 LM3, ALL)
+ZMK_COMBO(escape, &lm LA(F4) ESC, LH0 LM3, ALL)
 
 ZMK_COMBO(sym_layer, &sl SYM, LT1 LT3, ALL)
 
