@@ -75,6 +75,8 @@ ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 
 ZMK_COMBO(enter, HT(RET), RM1 RM2, ALL)
 ZMK_COMBO(space, HT(SPACE), LM1 LM2, ALL)
+ZMK_COMBO(bspace, HT(BSPC), LM1 RM1, ALL)
+ZMK_COMBO(del, HT(DEL), LM2 RM1, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
