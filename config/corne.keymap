@@ -73,6 +73,9 @@ ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
 ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 
+ZMK_COMBO(enter, HT(RET), RM1 RM2, ALL)
+ZMK_COMBO(space, HT(SPACE), LM1 LM2, ALL)
+
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &hrm LA(F4) ESC  HT(Q)       HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         HT(BSPC)
