@@ -65,9 +65,6 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
 ZMK_COMBO(ae, &kp DE_AE, LM4 LT2, ALL)
-ZMK_COMBO(nav_layer, &to NAV, LM1 RM1, ALL)
-ZMK_COMBO(sym_layer, &to SYM, LM2 RM2, ALL)
-ZMK_COMBO(num_layer, &to NUM, LM3 RM3, ALL)
 ZMK_COMBO(sys_layer_right, &mo 4, RH1 RH2, ALL)
 ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
@@ -77,6 +74,7 @@ ZMK_COMBO(enter, HT(RET), RM1 RM2, ALL)
 ZMK_COMBO(space, HT(SPACE), LM1 LM2, ALL)
 ZMK_COMBO(bspace, HT(BSPC), LM1 RM1, ALL)
 ZMK_COMBO(del, HT(DEL), LM2 RM1, ALL)
+ZMK_COMBO(escape, &hrm LA(F4) ESC, LH0 LM3, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
