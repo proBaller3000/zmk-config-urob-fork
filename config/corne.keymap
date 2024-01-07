@@ -30,6 +30,13 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+ZMK_BEHAVIOR(lm, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&kp>;
+)
+
 ZMK_BEHAVIOR(mto, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -60,7 +67,7 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 #define SYS 4
 
 #define ______ &trans
-#define HT(key) &hrm LC(key) key
+#define HT(key) &lm LC(key) key
 
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
