@@ -97,7 +97,6 @@ ZMK_COMBO(sys_layer_right, &mo 4, RH1 RH2, ALL)
 ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 ZMK_COMBO(nav_layer, &to NAV, LH0 RH0, ALL)
 ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
-ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 
 ZMK_COMBO(p_above, &paste_above, LB1 RT2, ALL)
 ZMK_COMBO(p_below, &paste_below, LB1 RM2, ALL)
@@ -114,6 +113,10 @@ ZMK_COMBO(rbrace, HT(RBRACE), RH0 RM3, ALL)
 ZMK_COMBO(rbracket, HT(RBRACKET), RH0 RM2, ALL)
 ZMK_COMBO(rprn, HT(DE_LN_RPRN), RH0 RM1, ALL)
 
+ZMK_COMBO(dash, HT(FSLH), LM2 LM3, ALL)
+ZMK_COMBO(plus, HT(DE_PLUS), LB2 LB3, ALL)
+ZMK_COMBO(plus, HT(LS(FSLH)), RT1 LM3, ALL)
+
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -121,7 +124,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &sk LSHFT      HT(A)         HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &smart_bspc   &sk LSHFT
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)       HT(FSLH)      &swapper
+       &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &hrm LA(F4) ESC  &swapper
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                  &sk LCTRL     &sk LALT      &sk LSHFT       &mto NAV SPACE  &lt NUM RET   &hrm LGUI TAB
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
