@@ -80,6 +80,11 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 #define ______ &trans
 #define HT(key) &lm LC(key) key
 
+ZMK_BEHAVIOR(smart_bspc, mod_morph,
+    bindings = <HT(BSPC)>, <HT(DEL)>;
+    mods = <(MOD_LSFT)>;
+)
+
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
 ZMK_COMBO(ae, &kp DE_AE, LM4 LT2, ALL)
@@ -105,7 +110,7 @@ ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &hrm LA(F4) ESC  HT(Q)       HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         HT(BSPC)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &sk LSHFT      HT(A)         HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         HT(BSPC)     &sk LSHFT
+      &sk LSHFT      HT(A)         HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &smart_bspc   &sk LSHFT
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)       HT(FSLH)      &swapper
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
