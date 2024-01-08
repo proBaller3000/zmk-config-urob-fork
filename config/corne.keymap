@@ -95,10 +95,6 @@ ZMK_COMBO(nav_layer, &to NAV, LH0 RH0, ALL)
 ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
 ZMK_COMBO(shift_alt, &sk LA(LSHFT), LM4 LM3, ALL)
 
-ZMK_COMBO(bspace, HT(BSPC), RM3 RM2, ALL)
-ZMK_COMBO(del, HT(DEL), RM3 RM4, ALL)
-ZMK_COMBO(escape, &lm LA(F4) ESC, LH0 LM3, ALL)
-
 ZMK_COMBO(p_above, &paste_above, LB1 RT2, ALL)
 ZMK_COMBO(p_below, &paste_below, LB1 RM2, ALL)
 
