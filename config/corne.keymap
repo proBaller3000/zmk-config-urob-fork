@@ -23,6 +23,12 @@
     chain-length = <27>;
 };
 
+#define DEFAULT 0
+#define NAV 1
+#define SYM 2
+#define NUM 3
+#define SYS 4
+
 ZMK_BEHAVIOR(paste_above, macro,
     wait-ms = <0>;
     tap-ms = <1>;
@@ -81,12 +87,6 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 // Custom Combos
 #undef COMBO_TERM
 #define COMBO_TERM 50
-
-#define DEFAULT 0
-#define NAV 1
-#define SYM 2
-#define NUM 3
-#define SYS 4
 
 #define ______ &trans
 #define HT(key) &lm LC(key) key
