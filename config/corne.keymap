@@ -56,7 +56,7 @@ ZMK_BEHAVIOR(mto, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
-    bindings = <&mo>, <&kp>;
+    bindings = <&sl>, <&kp>;
 )
 
 #define ARROWKEYS RM1 RM2 RM3 RT2
