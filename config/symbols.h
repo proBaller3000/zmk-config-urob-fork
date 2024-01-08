@@ -382,7 +382,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define DE_TILDE  LA(RBKT)     // ~
 // #define DE_PIPE  RA(GRAVE)     // "|"
 // #define DE_AMPS  CARET         // "&" DE_AMPR
-// #define DE_BSLH  RA(MINUS)     // "\" DE_BSLS
+#define DE_BSLH  RA(MINUS)     // "\" DE_BSLS
 // #define DE_QUESTION  LS(MINUS) // ? DE_QUES
 // #define DE_AT  RA(Q)           // "@"
 // #define DE_LPAR  LS(N8)        // ( DE_LPRN

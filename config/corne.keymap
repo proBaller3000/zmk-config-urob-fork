@@ -117,6 +117,7 @@ ZMK_COMBO(dash, HT(FSLH), LM2 LM3, ALL)
 ZMK_COMBO(plus, HT(DE_PLUS), LB2 LB3, ALL)
 ZMK_COMBO(underscore, HT(LS(FSLH)), RT1 LM3, ALL)
 ZMK_COMBO(slash, HT(DE_SLSH), RT1 RT2, ALL)
+ZMK_COMBO(bslash, HT(DE_BSLH), RT0 RT1, ALL)
 ZMK_COMBO(asterix, HT(DE_ASTR), RB1 RB2, ALL)
 ZMK_COMBO(is, HT(DE_EQL), RT2 LM3, ALL)
 ZMK_COMBO(hash, HT(DE_HASH), RM0 LM3, ALL)
@@ -128,6 +129,7 @@ ZMK_COMBO(ques, HT(DE_QUES), RT3 RT2, ALL)
 ZMK_COMBO(dollar, HT(DE_DLR), LM2 RT3, ALL)
 ZMK_COMBO(squot, HT(DE_QUOT), RT3 RT4, ALL)
 ZMK_COMBO(dquot, HT(DE_DQUO), LT3 LT4, ALL)
+ZMK_COMBO(grave, HT(GRAVE), LT1 LM0, ALL)
 
 
 ZMK_LAYER(default_layer,
@@ -158,7 +160,7 @@ ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        HT(RA(Q))     HT(DE_EXCL)   HT(DE_DQUO)   HT(DE_DLR)    HT(DE_PERC)   HT(DE_DEG)        HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES)   HT(DE_ASTR)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       HT(DE_CARET) HT(DE_LN_LABK) HT(LBRACE)    HT(LBRACKET) HT(DE_LN_LPRN) ______            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) HT(DE_HASH)
+       HT(GRAVE)     HT(DE_LN_LABK) HT(LBRACE)    HT(LBRACKET) HT(DE_LN_LPRN) ______            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) HT(DE_HASH)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        HT(DE_PIPE)   ______        ______        ______        ______        ______            ______        ______        ______        ______        ______        HT(DE_PLUS)
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
