@@ -26,12 +26,12 @@
 ZMK_BEHAVIOR(paste_above, macro,
     wait-ms = <0>;
     tap-ms = <5>;
-    bindings = <&kp LSHFT &kp LA(DOWN);
+    bindings = <&kp LSHFT &kp LA(DOWN)>;
 )
 ZMK_BEHAVIOR(paste_below, macro,
     wait-ms = <0>;
     tap-ms = <5>;
-    bindings = <&kp LSHFT &kp LA(UP);
+    bindings = <&kp LSHFT &kp LA(UP)>;
 )
 
 ZMK_BEHAVIOR(hrm, hold_tap,
