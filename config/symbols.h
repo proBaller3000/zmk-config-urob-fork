@@ -39,85 +39,85 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ___ &trans
 
 // CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION
-#define DE_LCTRL  LCTRL // left control
-#define DE_RCTRL  RCTRL // right control
-#define DE_LGUI  LGUI   // left cmd
-#define DE_RGUI  RGUI
-#define DE_LALT  LALT
-#define DE_RALT  RALT
-#define DE_LSHFT  LSHFT
-#define DE_RSHFT  RSHFT
+#define DE_LCTRL LCTRL // left control
+#define DE_RCTRL RCTRL // right control
+#define DE_LGUI LGUI   // left cmd
+#define DE_RGUI RGUI
+#define DE_LALT LALT
+#define DE_RALT RALT
+#define DE_LSHFT LSHFT
+#define DE_RSHFT RSHFT
 
 // ARROWS
-#define DE_UP  UP
-#define DE_LEFT  LEFT
-#define DE_DOWN  DOWN
-#define DE_RIGHT  RIGHT
+#define DE_UP UP
+#define DE_LEFT LEFT
+#define DE_DOWN DOWN
+#define DE_RIGHT RIGHT
 
 // SPACE CAPS TAB ENTER BACKSPACE ESCAPE DELETE
-#define DE_SPACE  SPACE // Space
-#define DE_CAPS  CAPS   // Caps Lock
-#define DE_BSPC  BSPC   // Backspace
-#define DE_RET  RET     // Enter
-#define DE_TAB  TAB     // Tab
-#define DE_DEL  DEL     // Delete
+#define DE_SPACE SPACE // Space
+#define DE_CAPS CAPS   // Caps Lock
+#define DE_BSPC BSPC   // Backspace
+#define DE_RET RET     // Enter
+#define DE_TAB TAB     // Tab
+#define DE_DEL DEL     // Delete
 
 // PAGE UP PAGE DOWN HOME END
-#define DE_PG_UP  PG_UP
-#define DE_PG_DN  PG_DN
-#define DE_HOME  HOME
-#define DE_END  END
+#define DE_PG_UP PG_UP
+#define DE_PG_DN PG_DN
+#define DE_HOME HOME
+#define DE_END END
 
 // FUNCTION KEYS
-#define DE_F1  F1
-#define DE_F2  F2
-#define DE_F3  F3
-#define DE_F4  F4
-#define DE_F5  F5
-#define DE_F6  F6
-#define DE_F7  F7
-#define DE_F8  F8
-#define DE_F9  F9
-#define DE_F10  F10
-#define DE_F11  F11
-#define DE_F12  F12
-#define DE_F13  F13
-#define DE_F14  F14
-#define DE_F15  F15
-#define DE_F16  F16
-#define DE_F17  F17
-#define DE_F18  F18
-#define DE_F19  F19
-#define DE_F20  F20
-#define DE_F21  F21
-#define DE_F22  F22
-#define DE_F23  F23
-#define DE_F24  F24
+#define DE_F1 F1
+#define DE_F2 F2
+#define DE_F3 F3
+#define DE_F4 F4
+#define DE_F5 F5
+#define DE_F6 F6
+#define DE_F7 F7
+#define DE_F8 F8
+#define DE_F9 F9
+#define DE_F10 F10
+#define DE_F11 F11
+#define DE_F12 F12
+#define DE_F13 F13
+#define DE_F14 F14
+#define DE_F15 F15
+#define DE_F16 F16
+#define DE_F17 F17
+#define DE_F18 F18
+#define DE_F19 F19
+#define DE_F20 F20
+#define DE_F21 F21
+#define DE_F22 F22
+#define DE_F23 F23
+#define DE_F24 F24
 
 // SOUND / VOLUME
-#define DE_VOL_UP  C_VOLUME_UP
-#define DE_VOL_DN  C_VOLUME_DOWN
-#define DE_MUTE  C_MUTE
-#define DE_NEXT  C_NEXT
-#define DE_PREV  C_PREVIOUS
-#define DE_STOP  C_STOP
-#define DE_PLAY  C_PLAY_PAUSE
-#define DE_SHUFFLE  C_SHUFFLE
+#define DE_VOL_UP C_VOLUME_UP
+#define DE_VOL_DN C_VOLUME_DOWN
+#define DE_MUTE C_MUTE
+#define DE_NEXT C_NEXT
+#define DE_PREV C_PREVIOUS
+#define DE_STOP C_STOP
+#define DE_PLAY C_PLAY_PAUSE
+#define DE_SHUFFLE C_SHUFFLE
 
 // DISPLAY BRIGHTNESS
-#define DE_BRI_UP  C_BRI_UP
-#define DE_BRI_DN  C_BRI_DN
+#define DE_BRI_UP C_BRI_UP
+#define DE_BRI_DN C_BRI_DN
 
 // LANGUAGE
-#define DE_LANG1  LANG1
-#define DE_LANG2  LANG2
-#define DE_LANG3  LANG3
-#define DE_LANG4  LANG4
-#define DE_LANG5  LANG5
-#define DE_LANG6  LANG6
-#define DE_LANG7  LANG7
-#define DE_LANG8  LANG8
-#define DE_LANG9  LANG9
+#define DE_LANG1 LANG1
+#define DE_LANG2 LANG2
+#define DE_LANG3 LANG3
+#define DE_LANG4 LANG4
+#define DE_LANG5 LANG5
+#define DE_LANG6 LANG6
+#define DE_LANG7 LANG7
+#define DE_LANG8 LANG8
+#define DE_LANG9 LANG9
 
 // Apple "Globe" key
 // https://github.com/zmkfirmware/zmk/issues/947
@@ -380,7 +380,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define DE_GRAVE  PLUS         // ` DE_GRV
 // #define DE_HASH  BSLH          // #
 // #define DE_TILDE  LA(RBKT)     // ~
-#define DE_PIPE  RA(GRAVE)     // "|"
+// #define DE_PIPE  RA(GRAVE)     // "|"
+#define DE_PIPE  RA(TILDE)     // "|"
 // #define DE_AMPS  CARET         // "&" DE_AMPR
 #define DE_BSLH  RA(MINUS)     // "\" DE_BSLS
 // #define DE_QUESTION  LS(MINUS) // ? DE_QUES
