@@ -251,7 +251,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_CENT  LA(N4)    // ¢
 #define DE_LBRC  LA(N5)    // [
 #define DE_RBRC  LA(N6)    // ]
-#define DE_PIPE  LA(N7)    // |
+// #define DE_PIPE  LA(N7)    // |
 #define DE_LCBR  LA(N8)    // {
 #define DE_RCBR  LA(N9)    // }
 #define DE_NEQL  LA(N0)    // ≠
@@ -380,7 +380,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define DE_GRAVE  PLUS         // ` DE_GRV
 // #define DE_HASH  BSLH          // #
 // #define DE_TILDE  LA(RBKT)     // ~
-// #define DE_PIPE  RA(GRAVE)     // "|"
+#define DE_PIPE  RA(GRAVE)     // "|"
 // #define DE_AMPS  CARET         // "&" DE_AMPR
 #define DE_BSLH  RA(MINUS)     // "\" DE_BSLS
 // #define DE_QUESTION  LS(MINUS) // ? DE_QUES
