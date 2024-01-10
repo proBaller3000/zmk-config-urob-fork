@@ -73,11 +73,11 @@ ZMK_BEHAVIOR(hpr, hold_tap,
     bindings = <&kp>, <&smart_bspc>;
 )
 
-ZMK_BEHAVIOR(ltr, hold_tap,
+ZMK_BEHAVIOR(kpr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
-    bindings = <&lt>, <&key_repeat>;
+    bindings = <&kp>, <&key_repeat>;
 )
 
 ZMK_BEHAVIOR(lm, hold_tap,
@@ -172,7 +172,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &hrm LA(F4) ESC  &swapper
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &sk LCTRL     &sk LALT    &hrm LSHFT SPACE  &mto NAV RET   &ltr NUM 0   &hrm LGUI TAB
+                                                 &sk LCTRL     &sk LALT    &lt NAV SPACE       &lt NUM RET   &kpr LGUI 0   HT(TAB)
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
