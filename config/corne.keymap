@@ -58,6 +58,21 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+ZMK_BEHAVIOR(rpi, hold_tap,
+    flavor = "hold-preferred";
+    tapping-term-ms = <50>;
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    bindings = <&kp>, <&kp>;
+)
+
+ZMK_BEHAVIOR(hpr, hold_tap,
+    flavor = "hold-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&smart_bspc>;
+)
+
 ZMK_BEHAVIOR(ltr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -153,7 +168,7 @@ ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &hrm LA(F4) ESC  HT(Q)       HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         &smart_bspc
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &sk LSHFT      HT(A)         HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &smart_bspc   &sk LSHFT
+      &sk LSHFT     &rpi LSHFT A   HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &sk LSHFT
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &hrm LA(F4) ESC  &swapper
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
