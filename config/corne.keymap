@@ -58,14 +58,14 @@ ZMK_BEHAVIOR(alt_nav, macro,
              , <&macro_release &mo NAV &kp LALT>;
 )
 ZMK_BEHAVIOR(swapper3, macro,
-    wait-ms = <0>;
+    wait-ms = <10>;
     tap-ms = <1>;
     bindings = <&macro_press &mo NAV &kp LALT>
              , <&macro_tap &kp TAB>
              , <&macro_release &mo NAV &kp LALT>;
 )
 ZMK_BEHAVIOR(swapper4, macro,
-    wait-ms = <0>;
+    wait-ms = <10>;
     tap-ms = <1>;
     bindings = <&macro_press &mo NAV &kp LCTRL>
              , <&macro_tap &kp TAB>
