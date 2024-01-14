@@ -58,25 +58,11 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-ZMK_BEHAVIOR(qmod, hold_tap,
-    flavor = "hold-preferred";
-    tapping-term-ms = <170>;
-    quick-tap-ms = <175>;
-    bindings = <&kp>, <&kp>;
-)
-
 ZMK_BEHAVIOR(hpr, hold_tap,
     flavor = "hold-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&smart_bspc>;
-)
-
-ZMK_BEHAVIOR(kpr, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    bindings = <&kp>, <&key_repeat>;
 )
 
 ZMK_BEHAVIOR(lm, hold_tap,
@@ -168,11 +154,11 @@ ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &hrm LA(F4) ESC  HT(Q)       HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         &smart_bspc
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &sk LSHFT     &qmod LSHFT A   HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &kp DE_PIPE
+      &sk LSHFT     &hrm LSHFT A   HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &kp DE_PIPE
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &hrm LA(F4) ESC  &swapper
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &sk LCTRL     &sk LALT    &lt NAV SPACE       &lt NUM RET   &kpr LGUI 0   HT(TAB)
+                                                 &sk LCTRL     &sk LALT    &lt NAV SPACE       &lt NUM RET   &key_repeat  &hrm LGUI TAB
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
