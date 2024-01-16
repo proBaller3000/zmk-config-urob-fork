@@ -81,6 +81,13 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+ZMK_BEHAVIOR(srm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <350>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&sk>;
+)
+
 ZMK_BEHAVIOR(hpr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <350>;
@@ -93,13 +100,6 @@ ZMK_BEHAVIOR(lm, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&kp>;
-)
-
-ZMK_BEHAVIOR(mto, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    bindings = <&sl>, <&kp>;
 )
 
 #define ARROWKEYS RM1 RM2 RM3 RT2
@@ -182,7 +182,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &lm LA(F4) ESC  &swapper3
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 &sk LCTRL     &sk LALT    &lt NAV SPACE       &lt NUM RET   &key_repeat  &hrm LGUI TAB
+                                                &sk LCTRL   &srm LCTRL LGUI &hrm LALT SPACE   &lt NAV RET   &lt NUM TAB  &hrm LGUI TAB
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
