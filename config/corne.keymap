@@ -116,7 +116,7 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 
 // Custom Combos
 #undef COMBO_TERM
-#define COMBO_TERM 50
+#define COMBO_TERM 40
 
 #define ______ &trans
 #define HT(key) &lm LC(key) key
