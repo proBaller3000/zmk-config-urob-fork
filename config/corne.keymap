@@ -76,7 +76,7 @@ ZMK_BEHAVIOR(swapper4, macro,
 
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <350>;
+    tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&kp>;
     hold-while-undecided;
@@ -84,14 +84,14 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 
 ZMK_BEHAVIOR(srm, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <350>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&sk>;
 )
 
 ZMK_BEHAVIOR(hpr, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <350>;
+    tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&smart_bspc>;
     hold-while-undecided;
