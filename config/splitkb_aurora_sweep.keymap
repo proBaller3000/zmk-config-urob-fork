@@ -17,11 +17,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "mouse.dtsi"
 #include "symbols.h"
-#include "keypos_42keys.h"
-
-&led_strip {
-    chain-length = <27>;
-};
+#include "../zmk-nodefree-config/keypos_def/keypos_34keys.h"
 
 #define DEFAULT 0
 #define NAV 1
