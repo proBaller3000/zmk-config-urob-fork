@@ -94,7 +94,7 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <250>;
+#define COMBO_HOOK require-prior-idle-ms = <450>;
 
 #define ______ &trans
 #define HT(key) &lm LC(key) key
