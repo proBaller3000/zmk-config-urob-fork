@@ -115,6 +115,8 @@ ZMK_COMBO(home_layer, &to DEFAULT, LM1 LM3, ALL)
 ZMK_COMBO(num_layer, &to NUM, LM1 LM2, ALL)
 ZMK_COMBO(caps_word, &caps_word, RM1 RM2, ALL)
 
+ZMK_COMBO(repeat, &key_repeat, RM1 RM3, ALL)
+
 ZMK_COMBO(labk, HT(DE_LN_LABK), RH0 LM4, ALL)
 ZMK_COMBO(lbrace, HT(LBRACE), RH0 LM3, ALL)
 ZMK_COMBO(lbracket, HT(LBRACKET), RH0 LM2, ALL)
