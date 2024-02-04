@@ -11,12 +11,12 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
+# include:
+#   - board: nice_nano_v2
+#     shield: corne_left
+#   - board: nice_nano_v2
+#     shield: corne_right
 ---
-include:
-  - board: nice_nano_v2
-    shield: corne_left
-  - board: nice_nano_v2
-    shield: corne_right
 include:
   - board: nice_nano_v2
     shield: cradio_left
