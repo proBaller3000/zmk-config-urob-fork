@@ -25,6 +25,10 @@
 #define SYM 3
 #define SYS 4
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS FSLH LS(FSLH)>;
+};
+
 ZMK_BEHAVIOR(swapper3, macro,
     wait-ms = <30>;
     tap-ms = <10>;
