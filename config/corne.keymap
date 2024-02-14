@@ -29,6 +29,10 @@
 #define SYM 3
 #define SYS 4
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS FSLH LS(FSLH)>;
+};
+
 ZMK_BEHAVIOR(swapper3, macro,
     wait-ms = <30>;
     tap-ms = <10>;
@@ -97,11 +101,11 @@ ZMK_BEHAVIOR(swapper2, tri_state,
 
 // Custom Combos
 #undef COMBO_TERM
-#define COMBO_TERM 60
+#define COMBO_TERM 50
 
 // use require-prior-idle-ms for combos
-#undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <280>;
+//#undef COMBO_HOOK
+//#define COMBO_HOOK require-prior-idle-ms = <280>;
 
 #define ______ &trans
 #define HT(key) &lm LC(key) key
