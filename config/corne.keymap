@@ -122,6 +122,17 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
     mods = <(MOD_LSFT)>;
 )
 
+// reuse basic mod-morph scheme
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
+        mods = <(MOD_L ## MOD|MOD_R ## MOD)>; \
+        bindings = <BINDING1>, <BINDING2>; \
+    )
+
+// tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
+SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
+SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
 ZMK_COMBO(ae, &kp DE_AE, LM4 LT2, ALL)
@@ -173,7 +184,7 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &sk LSHFT     &hrm LSHFT A   HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &swapper4
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &lm LA(F4) ESC  &swapper3
+       &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         &comma_morph     HT(DOT)     &lm LA(F4) ESC  &swapper3
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                 &key_repeat  &srm LALT LGUI &hrm LCTRL SPACE   &lt NAV RET   &ltm NUM NAV  &hrm LGUI TAB
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
