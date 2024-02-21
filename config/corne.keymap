@@ -184,9 +184,9 @@ ZMK_LAYER(default_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &sk LSHFT     &hrm LSHFT A   HT(S)         HT(D)         HT(F)         HT(G)             HT(H)         HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &swapper4
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         &comma_morph     HT(DOT)     &lm LA(F4) ESC  &swapper3
+       &kp LCTRL     HT(DE_Y)      HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &lm LA(F4) ESC  &swapper3
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                &key_repeat  &srm LALT LGUI &hrm LCTRL SPACE   &lt NAV RET   &ltm NUM NAV  &hrm LGUI TAB
+                                                &key_repeat  &srm LALT LGUI &hrm LCTRL SPACE   &lt NAV RET   &ltm NUM NAV  &lm LGUI TAB
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
