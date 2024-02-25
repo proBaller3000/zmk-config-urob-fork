@@ -141,7 +141,7 @@ ZMK_COMBO(sys_layer_right, &mo 4, RH1 RH2, ALL)
 ZMK_COMBO(sys_layer_left, &mo 4, LH1 LH2, ALL)
 ZMK_COMBO(nav_layer, &to NAV, LH0 RH0, ALL)
 ZMK_COMBO(home_layer, &to DEF, LM1 LM3, ALL)
-ZMK_COMBO(num_layer, &to NUM, LM1 LM2, ALL)
+ZMK_COMBO(num_layer, &to SYM, LM1 LM2, ALL)
 ZMK_COMBO(caps_word, &caps_word, RM1 RM2, ALL)
 
 ZMK_COMBO(repeat, &key_repeat, RM1 RM3, ALL)
@@ -216,13 +216,13 @@ ZMK_LAYER(numbers_layer,
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       HT(RA(Q))     HT(DE_EXCL)   HT(DE_DQUO)   HT(DE_DLR)    HT(DE_PERC)   HT(DE_DEG)        HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES)   HT(DE_ASTR)
+       ______        ______        HT(N7)        HT(N8)        HT(N9)        ______        HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES)   HT(DE_ASTR)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       HT(GRAVE)     HT(DE_LN_LABK) HT(LBRACE)    HT(LBRACKET) HT(DE_LN_LPRN) ______           ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) HT(DE_HASH)
+       ______        HT(DOT)        HT(N4)        HT(N5)        HT(N6)        HT(N0)            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) HT(DE_HASH)
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       HT(DE_PIPE)   ______        ______        ______        ______        ______            ______        ______        ______        ______        ______        HT(DE_PLUS)
+       ______        HT(COMMA)        HT(N1)        HT(N2)        HT(N3)        ______          ______        ______        ______        ______        ______        HT(DE_PLUS)
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                                                 ______        ______        ______            ______        ______        ______
+                                                 ______        ______        &tm LCTRL DEF     ______        ______        ______
   //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
