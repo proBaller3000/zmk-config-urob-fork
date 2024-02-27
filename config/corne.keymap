@@ -80,12 +80,6 @@ ZMK_BEHAVIOR(lm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
-ZMK_BEHAVIOR(lms, hold_tap,
-    flavor = "tap-preferred";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    bindings = <&swapper3>, <&kp>;
-)
 
 ZMK_BEHAVIOR(tm, hold_tap,
     flavor = "tap-preferred";
@@ -102,6 +96,19 @@ ZMK_BEHAVIOR(ltm, hold_tap,
     bindings = <&mo>, <&to>;
 )
 
+ZMK_BEHAVIOR(lms, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&swapper3>, <&kp>;
+)
+
+ZMK_BEHAVIOR(rms, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&key_repeat>, <&kp>;
+)
 #define ARROWKEYS LM1 LM2 LM3 LT2
 
 // Alt+Tab swapper, requires PR #1366
@@ -188,7 +195,7 @@ ZMK_COMBO(shift, &kp LSHFT,LM1 LM2 LM3, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &lm LA(F4) ESC HT(Q)         HT(W)         HT(E)         HT(R)         HT(T)             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         &smart_bspc
+      &lm LA(F4) ESC HT(Q)         HT(W)         HT(E)         HT(R)         &rms 0 T             HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)      &smart_bspc
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &sk LSHFT     &hrm LSHFT A   HT(S)         HT(D)         HT(F)         &lm LGUI G        &lm LGUI H    HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &swapper4
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -200,7 +207,7 @@ ZMK_LAYER(default_layer,
 
 ZMK_LAYER(nav_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       ______        U_WH_L        HT(PG_UP)     &kp UP        HT(PG_DN)     U_WH_R            U_WH_L        U_WH_U        U_MS_U        U_WH_D        U_WH_R        ______
+       ______        U_WH_L        HT(PG_UP)     &kp UP        HT(PG_DN)     ______            U_WH_L        U_WH_U        U_MS_U        U_WH_D        U_WH_R        ______
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        ______        ______       &lm HOME LEFT  &kp DOWN     &lm END RIGHT  &kp LGUI           &kp LGUI        U_MS_L        U_MS_D         U_MS_R       ______        ______
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
