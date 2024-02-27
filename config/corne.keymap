@@ -80,6 +80,13 @@ ZMK_BEHAVIOR(lm, hold_tap,
     bindings = <&kp>, <&kp>;
 )
 
+ZMK_BEHAVIOR(lms, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&swapper3>, <&kp>;
+)
+
 ZMK_BEHAVIOR(tm, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <280>;
@@ -181,7 +188,7 @@ ZMK_COMBO(shift, &kp LSHFT,LM1 LM2 LM3, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &lm LA(F4) ESC HT(Q)         HT(W)         HT(E)         HT(R)        &lm swapper3 T     HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         &smart_bspc
+      &lm LA(F4) ESC HT(Q)         HT(W)         HT(E)         HT(R)         &lm 0 T           HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         &smart_bspc
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &sk LSHFT     &hrm LSHFT A   HT(S)         HT(D)         HT(F)         &lm LGUI G        &lm LGUI H    HT(J)         HT(K)         HT(L)         &hpr LSHFT 0  &swapper4
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
