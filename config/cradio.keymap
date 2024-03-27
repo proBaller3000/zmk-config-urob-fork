@@ -76,7 +76,6 @@ ZMK_BEHAVIOR(lm, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&kp>;
-    require-prior-idle-ms = <350>;
 )
 
 
