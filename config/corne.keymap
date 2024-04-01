@@ -17,7 +17,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "mouse.dtsi"
 #include "symbols.h"
-#include "../zmk-nodefree-config/keypos_def/keypos_34keys.h"
+#include "keypos_42keys.h"
 &led_strip {
     chain-length = <27>;
 };
@@ -209,83 +209,83 @@ ZMK_COMBO(shift, &kp LSHFT,LM1 LM2 LM3, ALL)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       HT(Q)         HT(W)         HT(E)         HT(R)         &rms 0 T          HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)       
+XXX    HT(Q)         HT(W)         HT(E)         HT(R)         &rms 0 T          HT(DE_Z)      HT(U)         HT(I)         HT(O)         HT(P)         XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &hrm LSHFT A   HT(S)         &hrm LCTRL D  &ht LALT F    &ht LGUI G        &ht LGUI H    &ht LALT J    &hrm LCTRL K  HT(L)         &hpr LSHFT 0
+XXX   &hrm LSHFT A   HT(S)         &hrm LCTRL D  &ht LALT F    &ht LGUI G        &ht LGUI H    &ht LALT J    &hrm LCTRL K  HT(L)         &hpr LSHFT 0  XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &lms 0 DE_Y    HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &lm LA(F4) ESC
+XXX    &lms 0 DE_Y    HT(X)         HT(C)         HT(V)         HT(B)             HT(N)         HT(M)         HT(COMMA)     HT(DOT)     &lm LA(F4) ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                &lm LALT TAB   &lt NAV SPACE     &lt SYM RET  &ltm NUM NAV  
+XXX                                             &lm LALT TAB   &lt NAV SPACE     &lt SYM RET  &ltm NUM NAV                                             XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 ZMK_LAYER(nav_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       U_WH_U        &kp LC(S)     &kp LA(E)     HT(PG_DN)     &key_repeat       U_WH_L        HT(PG_UP)     &kp UP        HT(PG_DN)     U_WH_R
+XXX   U_WH_U        &kp LC(S)     &kp LA(E)     HT(PG_DN)     &key_repeat       U_WH_L        HT(PG_UP)     &kp UP        HT(PG_DN)     U_WH_R        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       ______        &kp LA(S)  &hrm LCTRL LA(D) &ht LALT LA(F) &kp LGUI         &kp LGUI      &kp LEFT      &kp DOWN      &kp RIGHT     ______
+XXX   ______        &kp LA(S)  &hrm LCTRL LA(D) &ht LALT LA(F) &kp LGUI         &kp LGUI      &kp LEFT      &kp DOWN      &kp RIGHT     ______        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       U_WH_D        &kp LC(X)     &kp LC(C)     &kp LC(V)     ______            ______        &kp HOME      ______        &kp END       ______
+XXX   U_WH_D        &kp LC(X)     &kp LC(C)     &kp LC(V)     ______            ______        &kp HOME      ______        &kp END       ______        XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                 ______        &ltm NAV DEF     ______        &to NUM
+XXX                                             ______        &ltm NAV DEF     ______        &to NUM        XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
 ZMK_LAYER(numbers_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       ______        HT(F7)        HT(F8)        HT(F9)        HT(F12)           ______        HT(N7)        HT(N8)        HT(N9)        &kp COMMA   
+XXX    ______        HT(F7)        HT(F8)        HT(F9)        HT(F12)           ______        HT(N7)        HT(N8)        HT(N9)        &kp COMMA    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       ______        HT(F4)      &hrm LCTRL F5   &ht LALT F6   &ht LGUI F11      &ht LGUI N0   &ht LALT N4   &hrm LCTRL N5 HT(N6)        ______      
+XXX    ______        HT(F4)      &hrm LCTRL F5   &ht LALT F6   &ht LGUI F11      &ht LGUI N0   &ht LALT N4   &hrm LCTRL N5 HT(N6)        ______       XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       ______        HT(F1)        HT(F2)        HT(F3)        HT(F10)           ______        HT(N1)        HT(N2)        HT(N3)        &kp DOT     
+XXX    ______        HT(F1)        HT(F2)        HT(F3)        HT(F10)           ______        HT(N1)        HT(N2)        HT(N3)        &kp DOT      XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                 ______        &ltm NAV DEF     ______        &to MOU
+XXX                                              ______        &ltm NAV DEF     ______        &to MOU XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
 ZMK_LAYER(mouse_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       U_WH_L        HT(PG_UP)     &kp UP        HT(PG_DN)     ______            U_WH_L        U_WH_U        U_MS_U        U_WH_D        U_WH_R      
+XXX    U_WH_L        HT(PG_UP)     &kp UP        HT(PG_DN)     ______            U_WH_L        U_WH_U        U_MS_U        U_WH_D        U_WH_R       XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       ______       &lm HOME LEFT  &kp DOWN     &lm END RIGHT  &kp LGUI          &kp LGUI      U_MS_L        U_MS_D         U_MS_R       ______      
+XXX    ______       &lm HOME LEFT  &kp DOWN     &lm END RIGHT  &kp LGUI          &kp LGUI      U_MS_L        U_MS_D         U_MS_R       ______       XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &swapper      U_BTN3        U_BTN2        U_BTN1        &swapper2         &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP
+XXX    &swapper      U_BTN3        U_BTN2        U_BTN1        &swapper2         &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                 ______        &ltm NAV DEF      ______        &to SYM
+XXX                                              ______        &ltm NAV DEF      ______        &to SYM XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       HT(COMMA)     HT(N7)        HT(N8)        HT(N9)        ______            HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES) 
+XXX    HT(COMMA)     HT(N7)        HT(N8)        HT(N9)        ______            HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES)  XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    HT(DE_LN_LABK)   HT(LBRACE)   HT(LBRACKET)  HT(DE_LN_LPRN) ______            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK)
+XXX HT(DE_LN_LABK)   HT(LBRACE)   HT(LBRACKET)  HT(DE_LN_LPRN) ______            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
- &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP  &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP
+XXX &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP  &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                 ______        &ltm NAV DEF     ______        ______
+XXX                                              ______        &ltm NAV DEF     ______        ______ XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
 ZMK_LAYER(num_l_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       HT(COMMA)     HT(N7)        HT(N8)        HT(N9)        ______            HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES) 
+XXX    HT(COMMA)     HT(N7)        HT(N8)        HT(N9)        ______            HT(DE_AMPR)   HT(DE_SLSH)   HT(DE_QUOT)   HT(DE_EQL)    HT(DE_QUES)  XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       ______        HT(N4)        HT(N5)        HT(N6)        HT(N0)            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK)
+XXX    ______        HT(N4)        HT(N5)        HT(N6)        HT(N0)            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       HT(DOT)       HT(N1)        HT(N2)        HT(N3)        ______          &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP
+XXX    HT(DOT)       HT(N1)        HT(N2)        HT(N3)        ______          &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                 ______        &ltm NAV DEF     ______        ______
+XXX                                              ______        &ltm NAV DEF     ______        ______ XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
 ZMK_LAYER(system_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-       &bootloader   &bt BT_CLR    &bt BT_NXT    &rgb_ug RGB_HUD &rgb_ug RGB_COLOR_HSB(128,100,100)         &ext_power EP_ON &ext_power EP_OFF ______  ______      &bootloader  
+XXX    &bootloader   &bt BT_CLR    &bt BT_NXT    &rgb_ug RGB_HUD &rgb_ug RGB_COLOR_HSB(128,100,100)         &ext_power EP_ON &ext_power EP_OFF ______  ______      &bootloader   XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_BRI &rgb_ug RGB_BRD                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   
+XXX    &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_BRI &rgb_ug RGB_BRD                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &rgb_ug RGB_SPI &rgb_ug RGB_SPD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_HUI                      ______        ______        ______        ______        ______
+XXX    &rgb_ug RGB_SPI &rgb_ug RGB_SPD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_HUI                      ______        ______        ______        ______        ______ XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                                 ______        ______                                       ______        ______
+XXX                                              ______        ______                                       ______        ______ XXX
   //                                           ╰─────────────┴─────────────╯                              ╰─────────────┴─────────────╯
 )
