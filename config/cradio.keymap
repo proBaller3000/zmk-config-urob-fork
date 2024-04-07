@@ -36,6 +36,7 @@ ZMK_BEHAVIOR(endsemi, macro,
     tap-ms = <10>;
     bindings = <&macro_tap &kp END>
              , <&macro_tap &kp LS(COMMA)>
+             , <&macro_tap &kp RET>;
 )
 
 ZMK_BEHAVIOR(swapper3, macro,
