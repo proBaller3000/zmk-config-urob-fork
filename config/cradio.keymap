@@ -80,10 +80,11 @@ ZMK_BEHAVIOR(lm, hold_tap,
 )
 
 ZMK_BEHAVIOR(ht, hold_tap,
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&kp>;
+    require-prior-idle-ms = <250>;
 )
 
 
