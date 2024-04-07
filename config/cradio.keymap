@@ -31,6 +31,13 @@
     continue-list = <UNDERSCORE MINUS FSLH LS(FSLH)>;
 };
 
+ZMK_BEHAVIOR(endsemi, macro,
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings = <&macro_tap &kp END>
+             , <&macro_tap &kp LS(COMMA)>
+)
+
 ZMK_BEHAVIOR(swapper3, macro,
     wait-ms = <30>;
     tap-ms = <10>;
@@ -223,7 +230,7 @@ ZMK_LAYER(nav_layer,
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        ______        &kp LA(S)  &hrm LCTRL LA(D) &ht LALT LA(F) &kp LGUI         &kp LGUI      &kp LEFT      &kp DOWN      &kp RIGHT     ______
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       U_WH_D        &kp LC(X)     &kp LC(C)     &kp LC(V)     ______            ______        &kp HOME      &kp LA(X)     &kp END       ______
+       U_WH_D        &kp LC(X)     &kp LC(C)     &kp LC(V)     &endsemi            ______        &kp HOME      &kp LA(X)     &kp END       ______
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
                                                  ______        &ltm NAV DEF     ______        &to NUM
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
