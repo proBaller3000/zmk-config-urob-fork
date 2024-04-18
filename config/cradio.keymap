@@ -179,7 +179,7 @@ ZMK_COMBO(num_l_layer, &to NUM_L, LM1 LM3, DEF)
 ZMK_COMBO(f_key_l_layer, &to NUM, LM1 LM3, SYM)
 ZMK_COMBO(nav_layer, &to NAV, LM1 LM3, NUM)
 ZMK_COMBO(nav_layer, &to MOU, LB1 LB3, ALL)
-ZMK_COMBO(caps_word, &caps_word, RM1 RM2, ALL)
+ZMK_COMBO(caps_word, &caps_word, RM1 RM2, DEF)
 
 ZMK_COMBO(labk, HT(DE_LN_LABK), RH0 LM4, ALL)
 ZMK_COMBO(lbrace, HT(LBRACE), RH0 LM3, ALL)
