@@ -171,6 +171,17 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
 SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
 SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
 
+SIMPLE_MORPH(0nf, SFT, &kpN0, &kpF10)
+SIMPLE_MORPH(1nf, SFT, &kpN1, &kpF1)
+SIMPLE_MORPH(2nf, SFT, &kpN2, &kpF2)
+SIMPLE_MORPH(3nf, SFT, &kpN3, &kpF3)
+SIMPLE_MORPH(4nf, SFT, &kpN4, &kpF4)
+SIMPLE_MORPH(5nf, SFT, &kpN5, &kpF5)
+SIMPLE_MORPH(6nf, SFT, &kpN6, &kpF6)
+SIMPLE_MORPH(7nf, SFT, &kpN7, &kpF7)
+SIMPLE_MORPH(8nf, SFT, &kpN8, &kpF8)
+SIMPLE_MORPH(9nf, SFT, &kpN9, &kpF9)
+
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
 ZMK_COMBO(ae, &kp DE_AE, LM4 LT2, ALL)
@@ -263,9 +274,9 @@ XXX   U_WH_D        U_BTN3        U_BTN2        U_BTN1        &swapper3         
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP   &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
+XXX    &1nf          &2nf         &3nf           &4nf          &5nf              &6nf          &7nf          &8nf          &9nf          &0nf         XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    HT(DE_LN_LABK)   HT(LBRACE)   HT(LBRACKET)  HT(DE_LN_LPRN) ______            ______     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX
+XXX    HT(DE_LN_LABK)   HT(LBRACE)   HT(LBRACKET)  HT(DE_LN_LPRN) ______         HT(DE_TILD)     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
  XXX  &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP  &kp C_VOLUME_DOWN &kp C_PREVIOUS &endsemi &kp C_NEXT &kp C_VOLUME_UP  XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
