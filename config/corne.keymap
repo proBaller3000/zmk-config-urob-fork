@@ -276,7 +276,7 @@ ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    &n1f          &n2f         &n3f           &n4f          &n5f              &n6f          &n7f          &n8f          &n9f          &n0f         XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    HT(DE_LN_LABK)   HT(LBRACE)   HT(LBRACKET)  HT(DE_LN_LPRN) ______         HT(DE_TILD)     HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX
+XXX  HT(DE_LN_LABK) HT(LBRACE)    HT(LBRACKET)  HT(DE_LN_LPRN) HT(DE_LSQU)       HT(DE_TILD)  HT(DE_LN_RPRN)  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX //Todo: consider free up left side by making closing brackets on same key as opening just shifted
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
  XXX   ______        ______        ______        ______        ______            ______        ______        &endsemi      ______        ______       XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
