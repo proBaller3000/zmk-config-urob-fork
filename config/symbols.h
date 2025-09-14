@@ -379,7 +379,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define DE_EQUAL  RPAR // = DE_EQL
 // #define DE_GRAVE  PLUS         // ` DE_GRV
 // #define DE_HASH  BSLH          // #
-// #define DE_TILDE  LA(RBKT)     // ~
+#define DE_TILDE  LA(RBKT)     // ~
 // #define DE_PIPE  RA(GRAVE)     // "|"
 #define DE_PIPE  RA(NUBS)     // "|"
 // #define DE_AMPS  CARET         // "&" DE_AMPR
