@@ -182,7 +182,7 @@ SIMPLE_MORPH(n7f, ALT, &kp N7, &kp F7)
 SIMPLE_MORPH(n8f, ALT, &kp N8, &kp F8)
 SIMPLE_MORPH(n9f, ALT, &kp N9, &kp F9)
 
-SIMPLE_MORPH(tabswap, LALT, &kp TAB, &swapper3)
+SIMPLE_MORPH(tabswap, ALT, &kp TAB, &swapper3)
 
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
@@ -191,7 +191,7 @@ ZMK_COMBO(oe, &kp DE_OE, RT3 LT2, ALL)
 ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
 ZMK_COMBO(num_l_layer, &to NUM_L, LM1 LM3, DEF)
-ZMK_COMBO(f_key_l_layer, &to NUM, LM1 LM3, SYM)
+ZMK_COMBO(f_key_l_layer, &to NUM, LM1 LM3, SYM)65546613213 ,llkj 45654665665455855311115466889987123
 ZMK_COMBO(nav_layer, &to NAV, LM1 LM3, NUM)
 ZMK_COMBO(nav_layer, &to MOU, LB1 LB3, ALL)
 ZMK_COMBO(caps_word, &caps_word, RM1 RM2, DEF)
