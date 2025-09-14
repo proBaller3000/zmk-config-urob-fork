@@ -289,7 +289,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_CCCE  LA(C)    // Ç
 #define DE_SQRT  LA(V)    // √
 #define DE_INTG  LA(B)    // ∫
-#define DE_TILD  LA(N)    // ~ (dead)
+#define DE_TILD  RA(DE_PLUS)    // ~ (dead) - fixed by FLO
 #define DE_MICR  LA(M)    // µ
 #define DE_INFN  LA(COMMA) // ∞
 #define DE_ELLP  LA(DOT)  // …
@@ -379,7 +379,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define DE_EQUAL  RPAR // = DE_EQL
 // #define DE_GRAVE  PLUS         // ` DE_GRV
 // #define DE_HASH  BSLH          // #
-#define DE_TILDE  LA(RBKT)     // ~
+// #define DE_TILDE  LA(RBKT)     // ~
 // #define DE_PIPE  RA(GRAVE)     // "|"
 #define DE_PIPE  RA(NUBS)     // "|"
 // #define DE_AMPS  CARET         // "&" DE_AMPR
