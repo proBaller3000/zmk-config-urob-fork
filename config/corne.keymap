@@ -65,6 +65,13 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     hold-while-undecided;
 )
 
+ZMK_BEHAVIOR(ltmorph, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&layer_sft>, <&kp>;
+)
+
 ZMK_BEHAVIOR(srm, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <250>;
@@ -237,7 +244,7 @@ XXX    &kp A         &kp S         &kp D         &ht LALT F    &kp G            
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LCTRL DE_Y &ht LGUI X   &ht LALT C    &kp V         &kp B             &kp N         &kp M       &ht LALT COMMA  &ht RGUI DOT &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                            &hrm LSHFT TAB  &layer_sft    &lt SYM RET    &sk LSHFT    XXX
+XXX                                           &hrm LSHFT TAB &ltmorph 0 SPACE   &lt SYM RET    &sk LSHFT    XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 ZMK_LAYER(nav_layer,
