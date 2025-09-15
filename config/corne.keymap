@@ -144,6 +144,16 @@ ZMK_BEHAVIOR(swapper2, tri_state,
     ignored-key-positions = <ARROWKEYS>;
 )
 
+behaviors {
+        mo_layer_shifted: behavior_when_mods {
+            compatible = "zmk,behavior-when-mods";
+            // No shift → Layer 1
+            // With shift (held or sticky at press) → Layer 2
+            bindings = <&mo NAV>, <&mo NUM>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+};
+
 // Custom Combos
 #undef COMBO_TERM
 #define COMBO_TERM 40
@@ -235,7 +245,7 @@ XXX    &kp A         &kp S         &kp D         &ht LALT F    &kp G            
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LCTRL DE_Y &ht LGUI X   &ht LALT C    &kp V         &kp B             &kp N         &kp M       &ht LALT COMMA  &ht RGUI DOT &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                            &hrm LSHFT TAB  &lt NAV SPACE    &lt SYM RET    &sk LSHFT    XXX
+XXX                                            &hrm LSHFT TAB  &mo_layer_shifted    &lt SYM RET    &sk LSHFT    XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 ZMK_LAYER(nav_layer,
