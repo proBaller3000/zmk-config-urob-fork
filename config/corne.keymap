@@ -174,7 +174,7 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-SIMPLE_MORPH(layer_sft, SFT, &mo NAV, &mo NUM)
+SIMPLE_MORPH(layer_sft, SFT, &mo NAV, &mo MOU)
 
 // tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
 SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
@@ -188,7 +188,7 @@ ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
 ZMK_COMBO(num_l_layer, &to NUM_L, LM1 LM3, DEF)
 ZMK_COMBO(f_key_l_layer, &to NUM, LM1 LM3, SYM)
-ZMK_COMBO(nav_layer, &to MOU, LB1 LB3, ALL)
+ZMK_COMBO(mouse_layer, &to MOU, LB1 LB3, ALL)
 ZMK_COMBO(caps_word, &caps_word, RM1 RM2, DEF)
 
 ZMK_COMBO(labk, HT(DE_LN_LABK), RH0 LM4, ALL)
@@ -230,7 +230,7 @@ XXX    &kp A         &kp S         &kp D         &ht LALT F    &kp G            
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LCTRL DE_Y &ht LGUI X   &ht LALT C    &kp V         &kp B             &kp N         &kp M       &ht LALT COMMA  &ht RGUI DOT &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                           &hrm LSHFT TAB &ltmorph 0 SPACE   &lt SYM RET    &sk LSHFT    XXX
+XXX                                             &lt NUM TAB  &ltmorph 0 SPACE    &sk LSHFT     &lt SYM RET    XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 ZMK_LAYER(nav_layer,
