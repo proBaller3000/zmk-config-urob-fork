@@ -1,5 +1,5 @@
 #include "keypos_34keys.h"
 
-#define XXX
+#define XXX /* - unused - */
 
 #include "base.keymap"
