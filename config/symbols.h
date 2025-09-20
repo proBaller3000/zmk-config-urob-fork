@@ -35,7 +35,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #pragma once
 
-#define XXX &none
 #define ___ &trans
 
 // CONTROL CMD/WINDOWS SHIFT ALT/META/OPTION

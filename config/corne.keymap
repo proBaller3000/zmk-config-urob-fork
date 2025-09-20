@@ -4,4 +4,6 @@
     chain-length = <27>;
 };
 
+#define XXX &none
 #include "base.keymap"
+
