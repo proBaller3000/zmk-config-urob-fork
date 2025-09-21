@@ -23,7 +23,7 @@
 #define NUM 2
 #define MOU 3
 #define SYM 4
-#define NUM_L 5
+#define LK 5
 #define SYS 6
 
 &caps_word {
@@ -105,6 +105,13 @@ ZMK_BEHAVIOR(ltsk, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&mo>, <&sk>;
+)
+
+ZMK_BEHAVIOR(kpsl, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&sl>;
 )
 
 ZMK_BEHAVIOR(tm, hold_tap,
@@ -230,7 +237,7 @@ XXX    &kp Q         &lms 0 W         &kp E         &kp R         &kp T         
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LSHFT A   &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &smart_bspc   XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX   &hrm LCTRL DE_Y &ht LGUI X   &ht LALT C    &kp V         &kp B             &kp N         &kp M       &ht LALT COMMA  &ht RGUI DOT &hrm RCTRL ESC XXX
+XXX   &hrm LCTRL DE_Y &ht LGUI X   &ht LALT C    &kp V         &kp B             &kp N         &kp M       &ht LALT COMMA &kpsl RGUI LK &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                           &ltsk NUM LSHFT &ltmorph 0 SPACE   &lt SYM RET   &sk LSHFT    XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
