@@ -18,6 +18,7 @@
 #include "mouse.dtsi"
 #include "symbols.h"
 
+
 #define DEF 0
 #define NAV 1
 #define NUM 2
@@ -67,6 +68,32 @@ ZMK_BEHAVIOR(ue, macro,
              , <&macro_release &kp LGUI>
              , <&macro_pause_for_release>
              , <&macro_tap &kp DE_UE>
+             , <&macro_press &kp LGUI>
+             , <&macro_tap &kp SPACE>
+             , <&macro_release &kp LGUI>;
+)
+
+ZMK_BEHAVIOR(oe, macro,
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings = <&macro_press &kp LGUI>
+             , <&macro_tap &kp SPACE>
+             , <&macro_release &kp LGUI>
+             , <&macro_pause_for_release>
+             , <&macro_tap &kp DE_OE>
+             , <&macro_press &kp LGUI>
+             , <&macro_tap &kp SPACE>
+             , <&macro_release &kp LGUI>;
+)
+
+ZMK_BEHAVIOR(ae, macro,
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings = <&macro_press &kp LGUI>
+             , <&macro_tap &kp SPACE>
+             , <&macro_release &kp LGUI>
+             , <&macro_pause_for_release>
+             , <&macro_tap &kp DE_AE>
              , <&macro_press &kp LGUI>
              , <&macro_tap &kp SPACE>
              , <&macro_release &kp LGUI>;
@@ -280,6 +307,18 @@ XXX                                              ______        &kp SPACE        
 )
 
 ZMK_LAYER(leader_key,
+  // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+XXX    &kp QMARK     &kp AT        &kp EXCL      &kp DLLR      &kp TILDE         &sz           &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
+  // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp PLUS      &none         &none         &none        XXX
+  // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+XXX    &none         &kp STAR      &kp COMMA     &kp CARET     &kp BSLH          ______        &kp MINUS     &kp SEMI      &kp DOT       &none        XXX
+  // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
+XXX                                              ______        &kp COLON         ______         ______                                                XXX
+  //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+)
+
+ZMK_LAYER(umlaut,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    &kp QMARK     &kp AT        &kp EXCL      &kp DLLR      &kp TILDE         &sz           &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
