@@ -186,9 +186,6 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
 
 SIMPLE_MORPH(layer_sft, SFT, &mo NAV, &mo MOU)
 
-// tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
-SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
 
 ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
 ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
@@ -196,18 +193,6 @@ ZMK_COMBO(ae, &kp DE_AE, LM4 LT2, ALL)
 ZMK_COMBO(oe, &kp DE_OE, RT3 LT2, ALL)
 ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
-ZMK_COMBO(f_key_l_layer, &to NUM, LM1 LM3, SYM)
-ZMK_COMBO(mouse_layer, &to MOU, LB1 LB3, ALL)
-
-ZMK_COMBO(labk, HT(DE_LN_LABK), RH0 LM4, ALL)
-ZMK_COMBO(lbrace, HT(LBRACE), RH0 LM3, ALL)
-ZMK_COMBO(lbracket, HT(LBRACKET), RH0 LM2, ALL)
-ZMK_COMBO(lprn, HT(DE_LN_LPRN), RH0 LM1, ALL)
-
-ZMK_COMBO(rabk, HT(DE_LN_RABK), LH0 RM4, ALL)
-ZMK_COMBO(rbrace, HT(RBRACE), LH0 RM3, ALL)
-ZMK_COMBO(rbracket, HT(RBRACKET), LH0 RM2, ALL)
-ZMK_COMBO(rprn, HT(DE_LN_RPRN), LH0 RM1, ALL)
 
 ZMK_COMBO(dash, HT(FSLH), LM2 LM3, ALL)
 ZMK_COMBO(plus, HT(DE_PLUS), LB2 LB3, ALL)
