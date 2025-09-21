@@ -49,9 +49,15 @@ ZMK_BEHAVIOR(swapper3, macro,
 ZMK_BEHAVIOR(sz, macro,
     wait-ms = <30>;
     tap-ms = <10>;
-    bindings = <&macro_tap &kp LGUI &kp SPACE>
+    bindings = <&macro_press &kp LGUI>
+             , <&macro_tap &kp SPACE>
+             , <&macro_pause_for_release>
+             , <&macro_release &kp LGUI>
              , <&macro_tap &kp DE_SZ>
-             , <&macro_tap &kp LGUI &kp SPACE>;
+             , <&macro_press &kp LGUI>
+             , <&macro_tap &kp SPACE>
+             , <&macro_pause_for_release>
+             , <&macro_release &kp LGUI>
 )
 
 ZMK_BEHAVIOR(swapper4, macro,
