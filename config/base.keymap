@@ -276,13 +276,13 @@ XXX                                              ______        &kp SPACE        
 
 ZMK_LAYER(leader_key,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    &kp QMARK     &kp AT        &kp EXCL        &kp DLLR      &kp TILDE            HT(DE_AMPR)   &kp UNDER    &kp EQUAL    &kp PIPE     &kp PRCNT  XXX
+XXX    &kp QMARK     &kp AT        &kp EXCL      &kp DLLR      &kp TILDE         HT(DE_AMPR)   &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX     &kp AMPS     &kp SQT       &kp DQT       &kp FSLH       &kp GRAVE         &kp HASH     &kp PLUS  HT(RBRACKET)  HT(RBRACE)   HT(DE_LN_RABK) XXX
+XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp PLUS      &none         &none         &none        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    HT(DOT)       &kp STAR      &kp COMMA        HT(N3)       &kp BSLH        ______      &kp MINUS     &kp SEMI      &kp DOT       &kp C_VOLUME_UP XXX
+XXX    &none         &kp STAR      &kp COMMA     &kp CARET     &kp BSLH          ______        &kp MINUS     &kp SEMI      &kp DOT       &none        XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                              ______        &kp COLON         ______         ______                                                 XXX
+XXX                                              ______        &kp COLON         ______         ______                                                XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
