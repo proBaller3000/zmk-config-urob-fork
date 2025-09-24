@@ -29,8 +29,6 @@
 #define UML 6
 #define SYS 7
 
-#define HRM_CS &hrm (MOD_LCTL|MOD_LSFT)
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS FSLH LS(FSLH)>;
 };
@@ -117,6 +115,14 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&kp>;
+    hold-while-undecided;
+)
+
+ZMK_BEHAVIOR(lclsht, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <(MOD_LCTL|MOD_LSFT)>, <&kp>;
     hold-while-undecided;
 )
 
@@ -272,7 +278,7 @@ XXX    &kp Q         &lms 0 W         &kp E         &kp R         &kp T         
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LSHFT A   &kp S         &lt LK D      &lt UML F     &kp G             &kp H         &kp J         &kp K         &kp L       &hrm RSHFT TAB XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C    HRM_CS V  &kp B                &kp N          HRM_CS M &ht LALT COMMA &ht RGUI DOT &hrm RCTRL ESC XXX
+XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C    &lclsht V     &kp B                &kp N      &lclsht M     &ht LALT COMMA &ht RGUI DOT &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                            &ltsl NUM LK &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
