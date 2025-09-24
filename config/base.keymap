@@ -122,7 +122,7 @@ ZMK_BEHAVIOR(lclsht, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
-    mods = <MOD_LCTL | MOD_LSFT>;
+    mods = <(MOD_LCTL | MOD_LSFT)>;
     bindings = <&kp>;
     hold-while-undecided;
 )
