@@ -119,12 +119,11 @@ ZMK_BEHAVIOR(hrm, hold_tap,
 )
 
 ZMK_BEHAVIOR(lclsht, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    mods = <(MOD_LCTL | MOD_LSFT)>;
-    bindings = <&kp>;
-    hold-while-undecided;
+   flavor = "balanced";
+   tapping-term-ms = <280>;
+   quick-tap-ms = <175>;
+   bindings = <&sk>, <&kp>;
+   hold-while-undecided;
 )
 
 ZMK_BEHAVIOR(hrsl, hold_tap,
@@ -279,7 +278,7 @@ XXX    &kp Q         &lms 0 W         &kp E         &kp R         &kp T         
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LSHFT A   &kp S         &lt LK D      &lt UML F     &kp G             &kp H         &kp J         &kp K         &kp L       &hrm RSHFT TAB XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C    &lclsht V     &kp B                &kp N      &lclsht M     &ht LALT COMMA &ht RGUI DOT &hrm RCTRL ESC XXX
+XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C  &lclsht LC(LSHFT) V &kp B         &kp N   &lclsht RC(RSHFT) M &ht LALT COMMA &ht RGUI DOT &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                            &ltsl NUM LK &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
