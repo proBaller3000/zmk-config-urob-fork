@@ -264,10 +264,6 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
 
 SIMPLE_MORPH(layer_sft, SFT, &mo NAV, &mo MOU)
 
-ZMK_COMBO(sz,  &kp DE_SZ, LM3 RT0, ALL)
-ZMK_COMBO(ue, &kp DE_UE, RT1 LT2, ALL)
-ZMK_COMBO(ae, &kp DE_AE, LM4 LT2, ALL)
-ZMK_COMBO(oe, &kp DE_OE, RT3 LT2, ALL)
 ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
 
