@@ -171,6 +171,14 @@ ZMK_BEHAVIOR(ht, hold_tap,
     require-prior-idle-ms = <250>;
 )
 
+ZMK_BEHAVIOR(htc, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&scomma>, <&kp>;
+    require-prior-idle-ms = <250>;
+)
+
 ZMK_BEHAVIOR(ltsk, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <280>;
@@ -270,6 +278,8 @@ SIMPLE_MORPH(brkt_morph, SFT, &kp LBKT, &kp RBKT)
 SIMPLE_MORPH(brc_morph, SFT, &kp LBRC, &kp RBRC)
 SIMPLE_MORPH(rabk_morph, SFT, &kp LT, &kp GT)
 
+SIMPLE_MORPH(scomma, SFT, &kp COMMA, &kp SEMI)
+
 ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
 
@@ -279,7 +289,7 @@ XXX    &kp Q         &lms 0 W         &kp E         &kp R         &kp T         
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX   &hrm LSHFT A   &kp S         &lt LK D      &lt UML F     &kp G             &kp H         &kp J         &kp K         &kp L      &hrm RSHFT COLON XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C  &lclsht LC(LSHFT) V &kp B         &kp N   &lclsht RC(RSHFT) M &ht LALT COMMA &ht RGUI DOT &hrm RCTRL ESC XXX
+XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C  &lclsht LC(LSHFT) V &kp B         &kp N   &lclsht RC(RSHFT) M &htc LALT 0  &ht RGUI DOT &hrm RCTRL ESC XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
