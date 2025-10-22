@@ -332,11 +332,11 @@ XXX                                              ______        &ltm NAV DEF     
 
 ZMK_LAYER(leader_key_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    ______        &caps_word    ______        ______        ______        &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
+XXX    ______        rfu           ______        ______        ______        &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp LSHFT     &kp LBRC      &kp LBKT      &kp LPRN      rfu               rfu           &prn_morph    &brkt_morph   &brc_morph    &rabk_morph   XXX
+XXX    &kp LSHFT     rfu           rfu           rfu           rfu               rfu           &prn_morph    &brkt_morph   &brc_morph    &rabk_morph   XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp RCTRL     &caps_word    ______        ______        ______            ______        ______        ______        &kp LGUI    &hrm RCTRL LA(F4)  XXX
+XXX    &kp RCTRL     rfu           ______        ______        ______            ______        ______        ______        &kp LGUI    &hrm RCTRL LA(F4)  XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        &kp SPACE         ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -344,11 +344,11 @@ XXX                                              ______        &kp SPACE        
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    &kp QMARK     &kp AT        &kp EXCL      &kp BSLH      &kp TILDE         &kp DLLR      &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
+XXX    &kp QMARK     &kp AT        &kp EXCL      rfu           &kp TILDE         &kp DLLR      &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp PLUS      &kp MINUS     &kp DQT       &kp DLLR     XXX
+XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp PLUS      &kp MINUS     rfu           &kp DLLR     XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp RCTRL     &kp STAR      &kp COMMA     &kp CARET     &kp BSLH          &kp EXCL      &kp QMARK     &kp SEMI      &kp COLON     &kp RCTRL    XXX
+XXX    &kp RCTRL     &kp STAR      &caps_word     &kp CARET     &kp BSLH          &kp EXCL      rfu          rfu           rfu       &hrm RCTRL LA(F4)    XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        ______            ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
