@@ -175,7 +175,7 @@ ZMK_BEHAVIOR(htc, hold_tap,
     flavor = "tap-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
-    bindings = <&scomma>, <&kp>;
+    bindings = <&kp>, <&scomma>;
     require-prior-idle-ms = <250>;
 )
 
