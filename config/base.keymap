@@ -344,11 +344,11 @@ XXX                                              ______        &kp SPACE        
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    &kp QMARK     &kp AT        &kp EXCL      rfu           &kp TILDE         &kp DLLR      &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
+XXX    &kp QMARK     &kp AT        &kp EQUAL      rfu           &kp TILDE         rfu          &kp UNDER     &kp EQUAL     &kp PIPE      &kp PRCNT    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp PLUS      &kp MINUS     rfu           &kp DLLR     XXX
+XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp PLUS      &kp MINUS     &kp DLLR      rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp RCTRL     &kp STAR      &caps_word     &kp CARET     &kp BSLH          &kp EXCL      rfu          rfu           rfu       &hrm RCTRL LA(F4)    XXX
+XXX    &kp RCTRL     &kp STAR      &caps_word     &kp CARET     &kp BSLH         &kp EXCL      rfu          rfu           rfu       &hrm RCTRL LA(F4) XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        ______            ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
