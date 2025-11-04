@@ -290,11 +290,6 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
 
 SIMPLE_MORPH(layer_sft, SFT, &mo NAV, &mo MOU)
 
-// tab: brace open, shift + tap: brace close
-SIMPLE_MORPH(prn_morph, SFT, &kp LPRN, &kp RPRN)
-SIMPLE_MORPH(brkt_morph, SFT, &kp LBKT, &kp RBKT)
-SIMPLE_MORPH(brc_morph, SFT, &kp LBRC, &kp RBRC)
-SIMPLE_MORPH(rabk_morph, SFT, &kp LT, &kp GT)
 SIMPLE_MORPH(dash_morph, SFT, &kp MINUS, &kp UNDERSCORE)
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 
@@ -354,11 +349,11 @@ ZMK_LAYER(leader_key_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    ______        rfu           ______        ______        ______        &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp LSHFT     rfu           rfu           rfu           rfu               rfu           &prn_morph    &brkt_morph   &brc_morph    &rabk_morph   XXX
+XXX    rfu           rfu           rfu           rfu           rfu               rfu           &kp LPRN      &kp LBRC      &kp LBKT      &kp LT       XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp RCTRL     rfu           ______        ______        ______            ______        ______        ______        &kp LGUI    &hrm RCTRL LA(F4)  XXX
+XXX    rfu           rfu           ______        ______        ______            ______        &kp RPRN      &kp RBRC      &kp RBKT      &kp GT       XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                              ______        &kp SPACE         ______        ______                                                 XXX
+XXX                                              ______        rfu               ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
