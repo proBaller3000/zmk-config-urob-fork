@@ -124,7 +124,6 @@ ZMK_BEHAVIOR(dasht, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&dash_morph>;
-    hold-while-undecided;
 )
 
 ZMK_BEHAVIOR(lclsht, hold_tap,
