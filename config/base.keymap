@@ -118,8 +118,8 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     hold-while-undecided;
 )
 
-/* dash morph shift */
-ZMK_BEHAVIOR(dsft, hold_tap,
+/* dash morph hold tap */
+ZMK_BEHAVIOR(dasht, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
@@ -302,9 +302,9 @@ ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    &kp Q         &lms 0 W         &kp E         &kp R         &kp T          &kp Z         &kp U         &kp I         &kp O         &kp P        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX   &hrm LSHFT A   &kp S         &lt LK D      &lt UML F     &kp G             &kp H         &kp J         &kp K         &kp L        &dsft RSHFT 0 XXX
+XXX   &hrm LSHFT A   &kp S         &lt LK D      &lt UML F     &kp G             &kp H         &kp J         &kp K         &kp L        &hrm RSHFT ESC XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C  &lclsht LC(LSHFT) V &kp B         &kp N   &lclsht RC(RSHFT) M &htc LALT 0  &dht RGUI 0  &hrm RCTRL ESC XXX
+XXX   &hrm LCTRL Y   &ht LGUI X    &ht LALT C  &lclsht LC(LSHFT) V &kp B         &kp N   &lclsht RC(RSHFT) M &htc LALT 0  &dht RGUI 0  &dash_morph RCTRL 0 XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
