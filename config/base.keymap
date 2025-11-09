@@ -43,26 +43,32 @@ ZMK_BEHAVIOR(endsemi, macro,
 ZMK_BEHAVIOR(lk_n, macro,
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&macro_tap &kp LC(C)>
+    bindings = <&macro_tap &kp LC(B)>
              , <&macro_tap &kp N>;
 )
 ZMK_BEHAVIOR(lk_p, macro,
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&macro_tap &kp LC(C)>
+    bindings = <&macro_tap &kp LC(B)>
              , <&macro_tap &kp P>;
 )
 ZMK_BEHAVIOR(lk_d, macro,
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&macro_tap &kp LC(C)>
+    bindings = <&macro_tap &kp LC(B)>
              , <&macro_tap &kp AMPS>;
 )
 ZMK_BEHAVIOR(lk_c, macro,
     wait-ms = <5>;
     tap-ms = <5>;
-    bindings = <&macro_tap &kp LC(C)>
+    bindings = <&macro_tap &kp LC(B)>
              , <&macro_tap &kp C>;
+)
+ZMK_BEHAVIOR(lk_lbkt, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp LBKT>;
 )
 
 ZMK_BEHAVIOR(swapper3, macro,
@@ -399,7 +405,7 @@ XXX    rfu           rfu           rfu           rfu           rfu              
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    &ae           rfu           rfu           &lk_d         rfu               rfu           rfu           rfu           rfu           rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           rfu           rfu           &lk_c         rfu               &lk_n         rfu           rfu           rfu           rfu          XXX
+XXX    rfu           rfu           rfu           &lk_c         rfu               &lk_n         &lk_lbkt      rfu           rfu           rfu          XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              rfu           rfu               rfu           rfu                                                    XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
