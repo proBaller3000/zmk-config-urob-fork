@@ -374,9 +374,9 @@ ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    &kp QMARK     &kp AT        &kp EQUAL      rfu           rfu              rfu           rfu           rfu           &kp PIPE      &kp PRCNT    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp AMPS      &kp SQT       &kp DQT       &kp FSLH      &kp GRAVE         &kp HASH      &kp TILDE     rfu           &kp DLLR      &kp PLUS     XXX
+XXX &hrm LSHFT AMPS &hrm LCTRL SQT &ht LGUI DQT  &ht LALT FSLH &kp GRAVE         &kp HASH      &ht RALT TILDE &kp RGUI &hrm RCTRL DLLR &hrm RSHFT PLUS XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp RCTRL     &kp STAR      &caps_word     &kp CARET     &kp BSLH         &kp EXCL      rfu           &endsemi      rfu      &hrm RCTRL LA(F4) XXX
+XXX    rfu           &kp STAR      &caps_word     &kp CARET     &kp BSLH         &kp EXCL      rfu           &endsemi      rfu           &kp LA(F4)   XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        ______            ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
