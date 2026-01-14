@@ -315,6 +315,7 @@ ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
 / {
     behaviors {
       skq: sticky_key_quick_release {
+        label = "stick qr";
         compatible = "zmk,behavior-sticky-key";
         #binding-cells = <1>;
         bindings = <&kp>;
