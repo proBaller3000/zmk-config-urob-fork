@@ -324,7 +324,7 @@ ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
         #binding-cells = <1>;
         bindings = <&kp>;
         release-after-ms = <3000>;
-        lazy;
+        // lazy; this setting seems to not (yet) work for my pipeline
         ignore-modifiers;
       };
     };
