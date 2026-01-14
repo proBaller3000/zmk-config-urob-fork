@@ -323,10 +323,6 @@ ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
         ignore-modifiers;
       };
     };
-
-    keymap {
-        ...
-    };
 };
 
 ZMK_BEHAVIOR(shrm, hold_tap,
