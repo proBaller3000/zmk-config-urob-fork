@@ -141,12 +141,6 @@ ZMK_BEHAVIOR(swapper4, macro,
              , <&macro_release &mo NAV &kp LCTRL>;
 )
 
-ZMK_BEHAVIOR(shrm, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <175>;
-    bindings = <&sk>, <&kp>;
-)
 
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
@@ -317,6 +311,30 @@ SIMPLE_MORPH(scomma, SFT, &kp COMMA, &kp SEMI)
 
 ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
+
+/ {
+    behaviors {
+      skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <3000>;
+        quick-release;
+        ignore-modifiers;
+      };
+    };
+
+    keymap {
+        ...
+    };
+};
+
+ZMK_BEHAVIOR(shrm, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+    bindings = <&skq>, <&kp>;
+)
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
