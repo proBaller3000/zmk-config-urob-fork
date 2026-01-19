@@ -409,7 +409,7 @@ XXX    &kp QMARK     &kp AT        &kp EQUAL      rfu           rfu             
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX &skm LSHFT AMPS  &skm LALT SQT &skm LCTRL DQT &skm LGUI FSLH &kp GRAVE       &kp HASH      &kp TILDE     rfu           &kp DLLR   &hrm RSHFT PLUS XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           &kp STAR      &caps_word     &kp CARET     &kp BSLH         &kp EXCL      rfu           &endsemi      rfu           &kp LA(F4)   XXX
+XXX    rfu           &kp STAR      &caps_word     &kp CARET     &kp BSLH         &kp EXCL      rfu           &endsemi      rfu      &skm RCTRL LA(F4) XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        ______            ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
