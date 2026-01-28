@@ -141,6 +141,12 @@ ZMK_BEHAVIOR(swapper4, macro,
              , <&macro_release &mo NAV &kp LCTRL>;
 )
 
+ZMK_BEHAVIOR(htap, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+    bindings = <&kp>, <&kp>;
+)
 
 ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
@@ -346,7 +352,7 @@ ZMK_BEHAVIOR(skml, hold_tap,
 
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    &kp Q         &lms 0 W         &lt LK E   &lt UML R     &kp T             &kp Z         &kp U         &kp I         &kp O         &kp P        XXX
+XXX    &kp Q         &lms 0 W         &lt LK E   &lt UML R     &htap LC(B) T     &kp Z         &kp U         &kp I         &kp O         &kp P        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    &skm LSHFT A  &skm LALT S   &skm LCTRL D  &skm LGUI F   &kp G             &kp H         &kp J         &kp K         &kp L       &dasht RSHFT 0 XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
