@@ -189,7 +189,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_M  M        // M
 #define DE_COMM  COMMA // ,
 #define DE_DOT  DOT    // .
-#define DE_FSLH  SLASH // -
+// #define DE_FSLH  SLASH // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -277,7 +277,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_FORD  LA(H)    // ª
 #define DE_MORD  LA(J)    // º
 #define DE_INCR  LA(K)    // ∆
-#define DE_AT    LA(L)    // @
+// #define DE_AT    LA(L)    // @
 #define DE_OEC    LA(SEMICOLON) // Œ
 #define DE_AEP   LA(APOS) // Æ
 #define DE_LSQU  LA(BSLH) // ‘
@@ -372,8 +372,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LBRACKET  RA(N7)        // { DE_LCBR
 #define RBRACKET  RA(N0)        // } DE_RCBR
 
+#define LBRACE RA(N7) // {
+#define RBRACE RA(N0) // }
+#define LBRACKET  RA(N8)        // { DE_LCBR
+#define RBRACKET  RA(N9)        // } DE_RCBR
+
 // ###############
-// #define DE_FSLH  AMPS  // "/" DE_SLSH
+#define DE_FSLH  AMPS  // "/" DE_SLSH
 // #define DE_STAR  RBRC  // "*" DE_ASTR
 // #define DE_EQUAL  RPAR // = DE_EQL
 #define DE_GRAVE  PLUS         // ` DE_GRV
@@ -384,7 +389,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_AMPS  CARET         // "&" DE_AMPR
 #define DE_BSLH  RA(MINUS)     // "\" DE_BSLS
 // #define DE_QUESTION  LS(MINUS) // ? DE_QUES
-// #define DE_AT  RA(Q)           // "@"
+#define DE_AT  RA(Q)           // "@"
 // #define DE_LPAR  LS(N8)        // ( DE_LPRN
 // #define DE_RPAR  LS(N9)        // ) DE_RPRN
 // #define DE_LBKT  RA(N8)        // [ DE_LBRC

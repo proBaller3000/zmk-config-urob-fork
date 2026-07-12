@@ -401,9 +401,9 @@ ZMK_LAYER(leader_key_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    ______        rfu           ______        ______        ______        &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      rfu               &kp LBKT      &kp LPRN      &kp RPRN      &kp RBKT      rfu          XXX
+XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      rfu               &kp LBRACKET  &kp DE_LPRN   &kp DE_RPRN   &kp RBRACKET  rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           rfu           ______        ______        ______            ______        &kp LBRC      &kp RBRC      &kp LT        &kp GT       XXX
+XXX    rfu           rfu           ______        ______        ______            ______        &kp LBRACE    &kp RBRACE    &kp DE_LSAQ  &kp DE_RSAQ   XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        rfu               ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -411,11 +411,11 @@ XXX                                              ______        rfu              
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    &kp QMARK     &kp AT        &kp EQUAL      rfu           rfu              rfu           rfu           rfu           &kp PIPE      &kp PRCNT    XXX
+XXX    &kp DE_QUES   &kp DE_AT     &kp DE_EQL   rfu           rfu              rfu           rfu           rfu           &kp DE_PIPE      &kp DE_PERC    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &skm LSHFT DE_AMPS &skm LALT DE_SQT &skm LCTRL DE_DQT &skm LGUI DE_FSLH &kp DE_GRAVE &kp DE_HASH &kp DE_TILDE rfu &kp DE_DLLR &hrm RSHFT DE_PLUS XXX
+XXX    &skm LSHFT DE_AMPS &skm LALT DE_SQT &skm LCTRL DE_DQT &skm LGUI DE_FSLH &kp DE_GRAVE &kp DE_HASH &kp DE_TILD rfu &kp DE_DLLR &hrm RSHFT DE_PLUS XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           &kp STAR      &caps_word     &kp CARET     &kp BSLH         &kp DE_EXCL   rfu           &endsemi      rfu      &skm RCTRL LA(F4) XXX
+XXX    rfu           &kp DE_ASTR   &caps_word   &kp DE_LABK   &kp DE_BSLH         &kp DE_EXCL   rfu       &endsemi      rfu      &skm RCTRL LA(F4) XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        ______            ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
