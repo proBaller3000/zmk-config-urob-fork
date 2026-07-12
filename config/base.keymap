@@ -80,58 +80,6 @@ ZMK_BEHAVIOR(swapper3, macro,
              , <&macro_release &mo NAV &kp LALT>;
 )
 
-ZMK_BEHAVIOR(sz, macro,
-    wait-ms = <40>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>
-             , <&macro_pause_for_release>
-             , <&macro_tap &kp DE_SZ>
-             , <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>;
-)
-
-ZMK_BEHAVIOR(ue, macro,
-    wait-ms = <40>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>
-             , <&macro_pause_for_release>
-             , <&macro_tap &kp DE_UE>
-             , <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>;
-)
-
-ZMK_BEHAVIOR(oe, macro,
-    wait-ms = <40>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>
-             , <&macro_pause_for_release>
-             , <&macro_tap &kp DE_OE>
-             , <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>;
-)
-
-ZMK_BEHAVIOR(ae, macro,
-    wait-ms = <40>;
-    tap-ms = <5>;
-    bindings = <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>
-             , <&macro_pause_for_release>
-             , <&macro_tap &kp DE_AE>
-             , <&macro_press &kp LGUI>
-             , <&macro_tap &kp SPACE>
-             , <&macro_release &kp LGUI>;
-)
-
 ZMK_BEHAVIOR(swapper4, macro,
     wait-ms = <30>;
     tap-ms = <10>;
@@ -410,9 +358,9 @@ XXX                                              ______        ______           
 
 ZMK_LAYER(umlaut,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    rfu           rfu           rfu           rfu           rfu               &sz           &ue           rfu           &oe           &lk_p        XXX
+XXX    rfu           rfu           rfu           rfu           rfu               &kp DE_SZ     &kp DE_UE     rfu           &kp DE_OE     &lk_p        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &ae           rfu           &lk_d         rfu           rfu               rfu           rfu           rfu           rfu           rfu          XXX
+XXX    &kp DE_AE     rfu           &lk_d         rfu           rfu               rfu           rfu           rfu           rfu           rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    rfu           rfu           &lk_c         rfu           rfu               &lk_n         &lk_lbkt      rfu           rfu           rfu          XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
