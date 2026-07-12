@@ -156,14 +156,6 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     hold-while-undecided;
 )
 
-/* dash morph shift */
-ZMK_BEHAVIOR(dasht, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    bindings = <&kp>, <&dash_morph>;
-)
-
 ZMK_BEHAVIOR(lclsht, hold_tap,
    flavor = "tap-preferred";
    tapping-term-ms = <280>;
@@ -310,11 +302,6 @@ ZMK_BEHAVIOR(smart_bspc, mod_morph,
 
 SIMPLE_MORPH(layer_sft, SFT, &mo NAV, &mo MOU)
 
-SIMPLE_MORPH(dash_morph, SFT, &kp MINUS, &kp UNDERSCORE)
-SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
-
-SIMPLE_MORPH(scomma, SFT, &kp COMMA, &kp SEMI)
-
 ZMK_COMBO(sys_layer_right, &mo SYS, RH1 RH0, ALL)
 ZMK_COMBO(sys_layer_left, &mo SYS, LH1 LH0, ALL)
 
@@ -354,9 +341,9 @@ ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    &kp Q         &lms 0 W         &lt LK E   &lt UML R     &htap LC(B) T     &kp Z         &kp U         &kp I         &kp O         &kp P        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &skm LSHFT A  &skm LALT S   &skm LCTRL D  &skm LGUI F   &kp G             &kp H         &kp J         &kp K         &kp L       &dasht RSHFT 0 XXX
+XXX    &skm LSHFT A  &skm LALT S   &skm LCTRL D  &skm LGUI F   &kp G             &kp H         &kp J         &kp K         &kp L       &skm RSHFT DE_MIN XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp Y         &kp X         &kp C     &lclsht LC(LSHFT) V &kp B           &kp N   &lclsht RC(RSHFT) M &scomma       &dot_morph  &skm RCTRL ESC  XXX
+XXX    &kp Y         &kp X         &kp C     &lclsht LC(LSHFT) V &kp B           &kp N   &lclsht RC(RSHFT) M &kp COMMA     &kp DOT  &skm RCTRL ESC  XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -403,7 +390,7 @@ XXX    ______        rfu           ______        ______        ______        &kp
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      rfu               &kp LBRACKET  &kp DE_LPRN   &kp DE_RPRN   &kp RBRACKET  rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           rfu           ______        ______        ______            ______        &kp LBRACE    &kp RBRACE    &kp DE_LSAQ  &kp DE_RSAQ   XXX
+XXX    rfu           rfu           ______        ______        ______            ______        &kp LBRACE    &kp RBRACE    &kp DE_LN_LABK  &kp DE_LN_RABK   XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        rfu               ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯

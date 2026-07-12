@@ -189,7 +189,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_M  M        // M
 #define DE_COMM  COMMA // ,
 #define DE_DOT  DOT    // .
-// #define DE_FSLH  SLASH // -
+#define DE_MIN  SLASH // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
