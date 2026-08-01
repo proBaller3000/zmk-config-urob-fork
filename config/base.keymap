@@ -98,7 +98,7 @@ ZMK_BEHAVIOR(lk_z, macro,
     wait-ms = <5>;
     tap-ms = <5>;
     bindings = <&macro_tap &kp LC(B)>
-             , <&macro_tap &kp Z>;
+             , <&macro_tap &kp Y>;
 )
 ZMK_BEHAVIOR(lk_g, macro,
     wait-ms = <5>;
