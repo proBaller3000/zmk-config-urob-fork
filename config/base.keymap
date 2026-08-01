@@ -285,6 +285,13 @@ ZMK_BEHAVIOR(skml, hold_tap,
     bindings = <&sk>, <&kp>;
 )
 
+ZMK_BEHAVIOR(umlbsp, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+    bindings = <&mo>, <&smart_bspc>;
+)
+
 ZMK_LAYER(default_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    &kp Q         &lms 0 W         &lt LK E   &lt UML R     &htap LC(B) T     &kp Y         &kp U         &kp I         &kp O         &kp P        XXX
@@ -293,7 +300,7 @@ XXX    &skm LSHFT A  &skm LALT S   &skm LCTRL D  &skm LGUI F   &kp G            
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    &kp Z         &kp X         &kp C     &lclsht LC(LSHFT) V &kp B           &kp N   &lclsht RC(RSHFT) M &kp COMMA     &kp DOT  &skm RCTRL ESC    XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
+XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &umlbsp LK 0  XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 ZMK_LAYER(nav_layer,
@@ -336,9 +343,9 @@ ZMK_LAYER(leader_key_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XXX    ______        rfu           ______        ______        ______        &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      rfu               &kp LBRACKET  &kp DE_LPRN   &kp DE_RPRN   &kp RBRACKET  rfu          XXX
+XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      rfu              &kp LBRACKET  &kp DE_LPRN   &kp DE_RPRN   &kp RBRACKET      rfu       XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           rfu           ______        ______        ______            ______        &kp LBRACE    &kp RBRACE    &kp DE_LN_LABK  &kp DE_LN_RABK   XXX
+XXX    rfu           rfu           ______        ______        ______           &kp DE_LN_LABK &kp LBRACE    &kp RBRACE    &kp DE_LN_RABK   rfu       XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        rfu               ______        ______                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
