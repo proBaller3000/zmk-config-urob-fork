@@ -106,6 +106,36 @@ ZMK_BEHAVIOR(lk_g, macro,
     bindings = <&macro_tap &kp LC(B)>
              , <&macro_tap &kp G>;
 )
+ZMK_BEHAVIOR(lk_e, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp E>;
+)
+ZMK_BEHAVIOR(lk_q, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp Q>;
+)
+ZMK_BEHAVIOR(lk_sn, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp LS(N)>;
+)
+ZMK_BEHAVIOR(lk_sr, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp LS(R)>;
+)
+ZMK_BEHAVIOR(lk_st, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp LS(T)>;
+)
 ZMK_BEHAVIOR(lk_minus, macro,
     wait-ms = <5>;
     tap-ms = <5>;
@@ -353,13 +383,13 @@ XXX                                            &lt NUM TAB &ltmorph 0 SPACE     
 )
 ZMK_LAYER(nav_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    rfu           &lk_w           rfu           &lk_r           rfu               &lk_z         &kp PG_UP   U_WH_U        &kp PG_DN     &lk_p        XXX
+XXX    &lk_q         &lk_w         &lk_e         &lk_r         &lk_st             &lk_z         &kp PG_UP     U_WH_U        &kp PG_DN     &lk_p        XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      &lk_g               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &lk_minus    XXX
+XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      &lk_g             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &lk_minus    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    ______        &lk_x        &lk_c         &lk_v          &lk_b            &lk_n &lclsht RC(RSHFT) HOME     U_WH_D        &kp END       &lk_lbkt     XXX
+XXX    ______        &lk_x         &lk_c         &lk_v         &lk_b            &lk_n &lclsht RC(RSHFT) HOME  U_WH_D       &kp END       &lk_lbkt     XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                              ______        &ltm NAV DEF     ______         ______                                                 XXX
+XXX                                              ______        &ltm NAV DEF      &lk_sn        &lk_sr                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
