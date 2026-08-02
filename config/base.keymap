@@ -378,7 +378,7 @@ XXX    &skm LSHFT A  &skm LALT S   &skm LCTRL D  &skm LGUI F   &kp G            
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    &kp Z         &kp X         &kp C     &lclsht LC(LSHFT) V &kp B           &kp N   &lclsht RC(RSHFT) M &kp COMMA     &kp DOT  &skm RCTRL ESC    XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &umlbsp LK 0  XXX
+XXX                                            &lt NUM TAB &ltmorph 0 SPACE     &lt SYM RET   &smart_bspc   XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 ZMK_LAYER(nav_layer,
