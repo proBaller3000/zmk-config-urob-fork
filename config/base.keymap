@@ -419,13 +419,13 @@ XXX                                              ______        &ltm NAV DEF     
 
 ZMK_LAYER(leader_key_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    rfu           &lk_w           rfu           &lk_r           rfu       &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
+XXX    rfu           rfu           rfu           rfu           rfu           &kp C_VOLUME_DOWN &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &lk_z         &lk_g            &kp LBRACKET  &kp DE_LPRN   &kp DE_RPRN   &kp RBRACKET    &lk_minus   XXX
+XXX    rfu           rfu           rfu           rfu           rfu              &kp LBRACKET  &kp DE_LPRN   &kp DE_RPRN   &kp RBRACKET    rfu         XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    ______        &lk_x        &lk_c          &lk_v         &lk_b             &kp DE_LN_LABK &kp LBRACE    &kp RBRACE    &kp DE_LN_RABK &lk_lbkt   XXX
+XXX    rfu           rfu           rfu           rfu           rfu               &kp DE_LN_LABK &kp LBRACE    &kp RBRACE    &kp DE_LN_RABK  rfu       XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-XXX                                              &lk_p         &lk_n               ______        ______                                               XXX
+XXX                                              rfu           rfu               ______        ______                                               XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 )
 
@@ -443,11 +443,11 @@ XXX                                              ______        ______           
 
 ZMK_LAYER(umlaut,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    rfu           rfu           rfu           rfu           rfu               &kp DE_SZ     &kp DE_UE     rfu           &kp DE_OE     &lk_p        XXX
+XXX    rfu           rfu           rfu           rfu           rfu               &kp DE_SZ     &kp DE_UE     rfu           &kp DE_OE     rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &kp DE_AE     rfu           &lk_d         rfu           rfu               rfu           rfu           rfu           rfu           rfu          XXX
+XXX    &kp DE_AE     rfu           rfu           rfu           rfu               rfu           rfu           rfu           rfu           rfu          XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    rfu           rfu           &lk_c         rfu           rfu               &lk_n         &lk_lbkt      rfu           rfu           rfu          XXX
+XXX    rfu           rfu           rfu           rfu           rfu               rfu           rfu           rfu           rfu           rfu          XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              rfu           rfu               rfu           rfu                                                    XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
