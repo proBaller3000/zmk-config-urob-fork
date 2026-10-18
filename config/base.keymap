@@ -70,6 +70,12 @@ ZMK_BEHAVIOR(lk_x, macro,
     bindings = <&macro_tap &kp LC(B)>
              , <&macro_tap &kp X>;
 )
+ZMK_BEHAVIOR(lk_y, macro,
+    wait-ms = <5>;
+    tap-ms = <5>;
+    bindings = <&macro_tap &kp LC(B)>
+             , <&macro_tap &kp Y>;
+)
 ZMK_BEHAVIOR(lk_v, macro,
     wait-ms = <5>;
     tap-ms = <5>;
@@ -387,7 +393,7 @@ XXX    &lk_q         &lk_w         &lk_e         &lk_r         &lk_st           
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      &lk_g             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &lk_minus    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    ______        &lk_x         &lk_c         &lk_v         &lk_b            &lk_n &lclsht RC(RSHFT) HOME  U_WH_D       &kp END       &lk_lbkt     XXX
+XXX    &lk_y         &lk_x         &lk_c         &lk_v         &lk_b            &lk_n &lclsht RC(RSHFT) HOME  U_WH_D       &kp END       &lk_lbkt     XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
 XXX                                              ______        &ltm NAV DEF      &lk_sn        &lk_sr                                                 XXX
   //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
