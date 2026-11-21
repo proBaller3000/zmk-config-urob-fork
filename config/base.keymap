@@ -437,9 +437,9 @@ XXX                                              rfu           rfu              
 
 ZMK_LAYER(symbols_layer,
   // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XXX    &kp DE_QUES   &kp DE_AT     &kp DE_EQL   rfu           rfu              rfu           rfu           rfu           &kp DE_PIPE      &kp DE_PERC    XXX
+XXX    &kp DE_QUES   &kp DE_AT     &kp DE_EQL   rfu           &kp DE_TILD        rfu           rfu           rfu           &kp DE_PIPE      &kp DE_PERC    XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XXX    &skm LSHFT DE_AMPS &skm LALT DE_SQT &skm LCTRL DE_DQT &skm LGUI DE_FSLH &kp DE_GRAVE &kp DE_HASH &kp DE_TILD rfu &kp DE_DLLR &hrm RSHFT DE_PLUS XXX
+XXX    &skm LSHFT DE_AMPS &skm LALT DE_SQT &skm LCTRL DE_DQT &skm LGUI DE_FSLH &kp DE_GRAVE &kp DE_HASH &kp RC(D) &kp RC(U) &kp DE_DLLR &hrm RSHFT DE_PLUS XXX
   // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XXX    rfu           &kp DE_ASTR   &caps_word   &kp DE_LABK   &kp DE_BSLH         &kp DE_EXCL   rfu       &endsemi      rfu      &skm RCTRL LA(F4) XXX
   // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
