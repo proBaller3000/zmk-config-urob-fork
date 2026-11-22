@@ -5,5 +5,7 @@
 };
 
 #define XXX &none
+#define SEMIC &kp LS(COMMA) 
+#define KREPEAT &key_repeat
 #include "base.keymap"
 

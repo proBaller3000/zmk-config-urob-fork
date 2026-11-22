@@ -1,5 +1,7 @@
 #include "keypos_34keys.h"
 
 #define XXX /* - unused - */
+#define SEMIC /* - unused - */ 
+#define KREPEAT /* - unused - */ 
 
 #include "base.keymap"
